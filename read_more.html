@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hmmm...</title>
+    <link rel="stylesheet" href="white_duplicative_styles.css"/>
+    <link rel="stylesheet" href="white_duplicative_content_style.css"/>
+</head>
+<body>
+<header>
+<!--NAVIGATIONS (RD Desktops)-->
+  <div class="topnav">
+    <a href="index.html" class="logo-link">
+      <img src="[M1] Main Lakteverian Arm.png" alt="Home" class="logo-image" />
+    </a>
+
+    <nav class="nav-links" id="desktopMenu">
+      <a href="add_info.html">WHAT DO WE DO?</a>
+      <a href="laktev.html">LAKTEV</a>
+    </nav>
+<!--NAVIGATIONS (RD Below 650)-->
+    <a href="javascript:void(0);" class="icon" onclick="toggleMenu()" aria-label="Toggle navigation menu" tabindex="0">☰</a>
+  </div>
+
+  <div id="mobileMenu" class="dropdown-menu">
+      <a href="add_info.html">WHAT DO WE DO?</a>
+      <a href="laktev.html">LAKTEV</a>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("mobileMenu");
+      const icon = document.querySelector('.icon');
+      menu.classList.toggle("show");
+      icon.classList.toggle("active");
+    }
+  </script>
+</header>
+<!--Contents-->
+  <h1 class="RMHeader">wow, you do really wonna read more, anyways...</h1>
+  <p class="RMContent1">
+    The mission of Sigma Library is simple: we want to give you all the resources you need to slay your academic goals and support your growth along the way. We’re here to back up the college’s curricular programs while enhancing the teaching-learning process for everyone in the Sigma fam. With tech-driven learning tools and support for high-level research, we’ve got your back no matter what you’re studying. We’re all about making sure you have access to next-level info that makes your academic journey easier, more exciting, and totally productive. The Sigma Library is your space to unlock potential and we’re here to make that happen!
+    <br>
+    <br>
+    At Sigma Library, we’ve set some pretty lit goals to make sure we’re always on top of our game. First up, we’re all about providing the most accurate and relevant info to support your academic grind. We keep our library collection fresh and organized so you’re not wasting time looking for what you need. We also make sure to give you the proper orientation to help you navigate the library like a pro, so you’re always in the know. And to keep it real, we’re big on encouraging lifelong learning and growth with programs that keep you motivated and inspired. We’re constantly leveling up our library, so it’s always there to support you as you crush your goals.
+    <br>
+    <br>
+    We’ve got all the services you could ever need to stay ahead of the curve. From Reader’s Services to Circulation and Reference Services, you can get your hands on the materials you need without breaking a sweat. Our e-Resources and e-Library services give you access to all the digital tools you need to study wherever you are. Plus, we’ve got Multimedia Services for those who like to learn through video, audio, or interactive content. Need to make some copies for a project? No worries, we’ve got that too. If you’re looking for something extra or need expert advice, our Referral Services are here to connect you with the right resources. Sigma Library is where you’ll find everything to keep your academic journey 100.
+    <br>
+    <br>
+    The Sigma Library is where all the magic happens. Whether you're grinding through assignments, doing research, or just vibing with a new book, we’ve got the tools and resources to help you stay on top of your game. We're all about giving you the best library experience, making sure you have access to everything you need to level up, now and in the future. So why not take full advantage of everything Sigma Library has to offer? We’re here for you, let’s get this knowledge poppin’ and take your learning to the next level!
+    <br>
+    <br>
+  </p>
+
+<div class="footer">
+  <p class="footer-paragraph">LEARNING EVIDENCE 2 | LICT 122 - WEB TECHNOLOGIES IN LIBRARIES & INFORMATION CENTERS</p>
+</div>
+</body>
+</html>

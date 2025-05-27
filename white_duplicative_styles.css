@@ -1,0 +1,132 @@
+/* NAV BAR */
+.topnav {
+  margin: 60px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+  padding: 0 24px;
+  position: relative;
+}
+
+/* Laktev's Logo */
+.logo-link {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  height: 48px;
+  width: auto;
+  transition: filter 0.3s ease;
+}
+
+.logo-image:hover {
+  filter: invert(13%) sepia(60%) saturate(6917%) hue-rotate(343deg) brightness(95%) contrast(100%);
+}
+
+.logo-image:active {
+  filter: invert(13%) sepia(60%) saturate(6917%) hue-rotate(343deg) brightness(95%) contrast(100%);
+}
+
+
+/* (RDDesktop) Designs */
+.nav-links {
+  display: flex;
+  gap: 64px;
+  height: 100%;
+}
+
+.nav-links a {
+  color: rgb(0, 0, 0);
+  font-family: Futura-Heavy-Font, "Courier New", monospace;
+  text-decoration: none;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: rgb(207, 7, 42);
+}
+
+.nav-links a.active {
+  color: rgb(207, 7, 42);
+}
+
+/* (RDDesktop) Burger Design */ 
+.icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  outline: none;
+  user-select: none;
+  text-decoration: none;
+}
+
+
+.icon:focus {
+  outline: none;
+}
+
+/* (RDMobile) Designs */
+.dropdown-menu {
+  display: none;
+  flex-direction: column;
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease-in-out;
+  position: absolute;
+  top: 72px; 
+  right: 24px;
+  width: 150px;
+  border-radius: 4px;
+  z-index: 1000;
+}
+
+.dropdown-menu a {
+  color: rgb(255, 255, 255);
+  padding: 14px 16px;
+  text-decoration: none;
+  text-align: left;
+  transition: color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(207, 7, 42);
+}
+
+.dropdown-menu.show {
+  display: flex;
+  max-height: 500px;
+}
+
+/* Responsive Design #1 */
+@media screen and (max-width: 600px) {
+  .nav-links {
+    display: none;
+  }
+
+  .icon {
+    display: block;
+  }
+
+  .logo-image {
+    height: 36px;
+  }
+  .topnav {
+    margin: 0 !important;
+  }
+}
+/* FONTS */
+@font-face {
+  font-family: Futura-Heavy-Font;
+  src: url([Futuras]/Futura-Heavy-font.ttf);
+}

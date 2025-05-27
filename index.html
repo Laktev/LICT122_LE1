@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sigma LRC</title>
+  <link rel="stylesheet" href="navigation_style.css" />
+  <link rel="stylesheet" href="index_style.css" />
+</head>
+<body>
+
+<header>
+<!--NAVIGATIONS (RD Desktops)-->
+  <div class="topnav">
+    <a href="index.html" class="logo-link">
+      <img src="[M1A] Main Lakteverian Arm.png" alt="Home" class="logo-image" />
+    </a>
+
+    <nav class="nav-links" id="desktopMenu">
+      <a href="add_info.html">WHAT DO WE DO?</a>
+      <a href="laktev.html">LAKTEV</a>
+    </nav>
+<!--NAVIGATIONS (RD Below 650)-->
+    <a href="javascript:void(0);" class="icon" onclick="toggleMenu()" aria-label="Toggle navigation menu" tabindex="0">☰</a>
+  </div>
+
+  <div id="mobileMenu" class="dropdown-menu">
+      <a href="add_info.html">WHAT DO WE DO?</a>
+      <a href="laktev.html">LAKTEV</a>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("mobileMenu");
+      const icon = document.querySelector('.icon');
+      menu.classList.toggle("show");
+      icon.classList.toggle("active");
+    }
+  </script>
+</header>
+
+<!--(Index only) Home Background-->
+  <div class="video-background">
+    <video autoplay muted loop playsinline>
+      <source src="background.mp4" type="video/mp4" />
+    </video>
+  </div>
+
+<!--Contents-->
+  <h2 class="header1"><a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">Grind Smarter, Not Harder — Welcome to Sigma Library</a></h2>
+  <p class="content1">
+    In today’s world can be a total struggle. But no stress, we’ve got the ultimate hookup for you! Our library is low-key a vibe, created to serve the whole Sigma community; students, faculty, staff, alumni, and researchers, with everything you need to stay on top of your academic grind. Whether you’re hustling through assignments or diving deep into research, Sigma Library is your one-stop shop for all things knowledge. We’re not just about books; we’re about making sure you have the tools to make your learning experience fire and stress-free.
+    <div class="read-more-container">
+        <a href="read_more.html" class="read-more-button">READ MORE</a>
+    </div>
+  </p>
+
+<!--Contents (Fake Field)-->
+<div class="input-section">
+  <p class="input-description">ARE YOU LOOKING FOR A BOOK?</p>
+  <div class="fake-input-container">
+    <input type="text" placeholder="Name of Book" class="fake-input" />
+    <input type="text" placeholder="Type" class="fake-input" />
+  </div>
+  <button class="fake-button"><a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">Search!</a></button>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+  <div class="footer">
+  <p class="footer-paragraph">LEARNING EVIDENCE 2 | LICT 122 - WEB TECHNOLOGIES IN LIBRARIES & INFORMATION CENTERS</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: Futura-Book-Font, "Courier New", monospace;
+}
+
+.RMHeader,.WWDHeader1 {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  font-size: 2rem; 
+  font-family: Futura-Heavy-Font, "Courier New", monospace;
+  margin: 40px auto 0 80px;
+  max-width: 720px;
+  line-height: 1.4;
+}
+
+.RMContent1,.WWDContent1 {
+  color: black;
+  font-size: 1.5rem;
+  max-width: 720px;
+  margin: 40px auto auto 80px;
+  padding-right: 40px;
+  line-height: 1.6;
+}
+
+.WWDTable1 {
+  color: black;
+  font-size: 1.5rem;
+  max-width: 720px;
+  margin: 20px auto auto 100px;
+  padding-right: 40px;
+  line-height: 1.6;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+  background-color: rgb(0, 0, 0);
+  color: white;
+  text-align: center;
+  padding: 12px 0;
+}
+
+/* Responsive Designs */
+@media screen and (max-width: 768px) {
+  .RMHeader,.WWDHeader1 {
+    margin: 40px 20px 20px 20px;
+    max-width: 100%;
+  }
+  .RMContent1,.WWDContent1,.WWDTable1 {
+    margin: 20px 20px 20px 20px; /* Reduced bottom margin for better spacing */
+    padding-right: 0;
+    max-width: 100%;
+  }
+  .footer {
+    font-size: 50%;
+  }
+}
+
+/* Fonts */
+@font-face {
+  font-family: Futura-Book-Font;
+  src: url([Futuras]/Futura-Book-font.ttf);
+}
+@font-face {
+  font-family: Futura-Heavy-Font;
+  src: url([Futuras]/Futura-Heavy-font.ttf);
+}
+@font-face {
+  font-family: Futura-Extra-Black-Font;
+  src: url([Futuras]/Futura-Extra-Black-font.ttf);
+}

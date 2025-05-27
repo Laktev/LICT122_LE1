@@ -1,0 +1,125 @@
+/* Transparent nav bar */
+.topnav {
+  margin: 60px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+  padding: 0 24px;
+  position: relative;
+}
+
+/* Logo styling */
+.logo-link {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  height: 48px;
+  width: auto;
+  transition: filter 0.3s ease;
+}
+
+.logo-image:hover {
+  filter: brightness(1000%) grayscale(100%) invert(100%);
+}
+
+/* Desktop nav links */
+.nav-links {
+  display: flex;
+  gap: 64px; /* Space between menu items */
+  height: 100%;
+}
+
+.nav-links a {
+  color: rgb(207, 7, 42);
+  font-family: Futura-Heavy-Font, "Courier New", monospace;
+  text-decoration: none;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: rgb(139, 139, 139);
+}
+
+.nav-links a.active {
+  color: rgb(139, 139, 139);
+}
+
+/* Hamburger icon (mobile only) */
+.icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: rgb(207, 7, 42);
+  outline: none;
+  user-select: none;
+}
+
+
+.icon:focus {
+  outline: none;
+}
+
+/* Mobile dropdown menu */
+.dropdown-menu {
+  display: none;
+  flex-direction: column;
+  background-color: white;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease-in-out;
+  position: absolute;
+  top: 72px; /* below nav bar */
+  right: 24px; /* right aligned */
+  width: 150px;
+  border-radius: 4px;
+  z-index: 1000;
+}
+
+.dropdown-menu a {
+  color: rgb(207, 7, 42);
+  padding: 14px 16px;
+  text-decoration: none;
+  text-align: left;
+  transition: color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+  color: rgb(139, 139, 139);
+  background-color: black;
+}
+
+.dropdown-menu.show {
+  display: flex;
+  max-height: 500px;
+}
+
+/* Responsive behavior */
+@media screen and (max-width: 600px) {
+  .nav-links {
+    display: none;
+  }
+
+  .icon {
+    display: block;
+  }
+
+  .logo-image {
+    height: 36px;
+  }
+  .topnav {
+    margin: 0 !important; /* Removes any margin from topnav */
+  }
+}
+@font-face {
+  font-family: Futura-Heavy-Font;
+  src: url([Futuras]/Futura-Heavy-font.ttf);
+}
